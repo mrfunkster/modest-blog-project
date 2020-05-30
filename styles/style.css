@@ -16,6 +16,12 @@ body {
     flex-shrink: 0;
 }
 
+.row-vcentered {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
 .width-25 {
     width: 25%;
 }
