@@ -1,0 +1,29 @@
+.footer {
+    background-color: #3a454d;
+    color: #ffffff;
+}
+
+.footer .container .row {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-bar {
+    height: 95px;
+}
+
+.copiryght-section {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.social-media-link-section {
+    display: flex;
+    justify-content: space-between;
+    width: 155px;
+}
+
+.social-media-link-section a img {
+    width: 30px;
+    height: 30px;
+}
