@@ -1,6 +1,10 @@
 .header {
     background-color: #1d2126;
     color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
 }
 
 .header .container .row {
