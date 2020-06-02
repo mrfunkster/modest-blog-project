@@ -219,6 +219,7 @@ h3 {
 .card {
     width: 263px;
     height: 374px;
+    cursor: pointer;
 }
 
 .photo-section {
@@ -264,7 +265,6 @@ h3 {
     height: 50px;
     background-color: #3a454d;
     margin-right: 1px;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -285,22 +285,34 @@ h3 {
     cursor: pointer;
 }
 
-.photo-section:hover .overlay {
+.card:hover .overlay {
     background-color: rgba(255, 255, 255, .4);
-
 }
 
-.photo-section:hover .icons-on-photo {
+.card:hover .description {
+    background-color: #3a454d;
+}
+.card:hover .description h4,
+.card:hover .description p {
+    color: white;
+}
+
+.card:hover .icons-on-photo {
     visibility: visible;
     opacity: 1;
 }
 
-.photo-section:hover .icons-on-photo,
+.card:hover .icons-on-photo,
 .icons-on-photo,
 .icons-on-photo .icon-small:hover,
 .icons-on-photo .icon-small,
 .photo-section .overlay,
-.photo-section:hover {
+.card:hover,
+.card .description,
+.card .description h4,
+.card .description p,
+.card:hover .description h4,
+.card:hover .description p  {
     transition: .3s;
 }
 
