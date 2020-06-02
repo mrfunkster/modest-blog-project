@@ -90,7 +90,7 @@
 
 /* We Are Modest Section */
 .page-content {
-    padding: 80px 0 60px 0;
+    padding: 80px 0 80px 0;
 }
 
 .line {
@@ -278,7 +278,6 @@ h3 {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 10;
     cursor: pointer;
 }
 
@@ -394,7 +393,7 @@ h3 {
     opacity: 1;
 }
 
-.icons-on-photo:hover .icon-small {
+.lovely-work-card .icons-on-photo:hover .icon-small {
     transform: scale(1.5);
 }
 
