@@ -49,6 +49,7 @@
     font-size: 14px;
     margin-right: 15px;
     cursor: pointer;
+    outline: none;
 }
 
 .buttons-container .introduction-button button:hover {
@@ -89,7 +90,7 @@
 
 /* We Are Modest Section */
 .page-content {
-    padding: 80px 0;
+    padding: 80px 0 60px 0;
 }
 
 .line {
@@ -209,11 +210,10 @@ h3 {
 
 /* Meet the team Section */
 .card-wraper {
-    margin-top: 15px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
 }
 
 .card {
@@ -224,9 +224,6 @@ h3 {
 
 .photo-section {
     height: 300px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     position: relative;
 }
 
@@ -330,6 +327,111 @@ h3 {
     background-color: #4e5a62;
 }
 
+.lovely-work-card {
+    width: 360px;
+    height: 265px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.lovely-work-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.gray-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 47, 54, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card-description {
+    height: 60px;
+    width: inherit;
+    background-color: #292f36;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100%);
+    cursor: pointer;
+}
+.card-description h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.lovely-work-card:hover .gray-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.lovely-work-card:hover .card-description {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.lovely-work-card .icons-on-photo {
+    top: 102px
+}
+
+.lovely-work-card .icons-on-photo .icon-small{
+    background: none;
+}
+
+.lovely-work-card:hover .icons-on-photo {
+    visibility: visible;
+    opacity: 1;
+}
+
+.icons-on-photo:hover .icon-small {
+    transform: scale(1.5);
+}
+
+.button-container {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.button-container button{
+    width: 150px;
+    height: 40px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-container button:hover {
+    background-color: #23b7a4;
+    border-color: #23b7a4;
+}
+
+.card-description,
+.lovely-work-card:hover .card-description,
+.lovely-work-card:hover .gray-overlay,
+.gray-overlay,
+.button-container button:hover,
+.button-container button {
+    transition: .3s;
+}
+
 /* What we do */
 .what-we-do-content .row {
     justify-content: space-between;
@@ -407,6 +509,93 @@ h3 {
     background-size: cover;
 }
 
+.stay-in-touch-section .container .row {
+    justify-content: space-between;
+    position: relative;
+}
+.text-block {
+    width: 535px;
+    padding-top: 55px;
+}
+.text-block h3 {
+    margin-bottom: 35px;
+    padding-left: 10px;
+}
 
+.input-block {
+    width: 555px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 16px;
+    background-color: white;
+}
 
+.input-block p {
+    color: #8d8f92;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.field-block {
+    width: 240px; 
+    padding-bottom: 25px;  
+}
+
+.field-block input {
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: none;
+    background-color: #eaeef1;
+    border-radius: 5px;
+    padding: 15px;
+    color: #8d8f92;
+    font-size: 14px;
+}
+
+.text-area {
+    width: 100%;
+    padding-bottom: 30px;
+}
+.text-area textarea {
+    resize: none;
+    width: 100%;
+    height: 160px;
+    border: none;
+    background-color: #eaeef1;
+    border-radius: 5px;
+    padding: 15px;
+    outline: none;
+    color: #8d8f92;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.input-block button {
+    width: 150px;
+    height: 40px;
+    border: 2px solid #23b7a4;
+    background-color: #23b7a4;
+    text-transform: uppercase;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-block button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #23b7a4;
+}
+
+.input-block button:hover,
+.input-block button {
+    transition: .3s;
+}
 
